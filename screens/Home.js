@@ -8,17 +8,16 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import {Icon} from '@expo/vector-icons';
-
-import {auth}  from '../firebase/utils.js';
+import { Icon } from '@expo/vector-icons';
+//import { auth }  from '../firebase/utils.js';
 
 const COLORS = {
   primary: '#68707f',
 };
 
 const Home = ({navigation}) => {
-  console.log('Current User =>>>>',auth)
-  return (
+  //console.log('Current User =>>>>',auth)
+  return(
     <SafeAreaView style={styles.container}>
       <View style={styles.flexContainer} >
         <View style={styles.subContainer} >
@@ -49,7 +48,7 @@ const Home = ({navigation}) => {
         </View>
       </View>
     </SafeAreaView>
-  );
+  )
 };
 
 export default Home;
